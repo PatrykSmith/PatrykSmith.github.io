@@ -15,17 +15,17 @@ body, html {
 
 }
 .bgimg-1 {
-  background-image: url("/index_background.jpg");
+  background-image: url("http://i.imgur.com/19Wb7SA.png");
   min-height: 100%;
 }
 
 .bgimg-2 {
-  background-image: url("/index_background.jpg");
+  background-image: url("http://i.imgur.com/19Wb7SA.png");
   min-height: 400px;
 }
 
 .bgimg-3 {
-  background-image: url("/index_background.jpg");
+  background-image: url("http://i.imgur.com/19Wb7SA.png");
   min-height: 400px;
 }
 
