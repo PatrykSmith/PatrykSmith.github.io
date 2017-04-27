@@ -15,17 +15,17 @@ body, html {
 
 }
 .bgimg-1 {
-  background-image: "soundboard.jpg";
+  background-image:"img_parallax.jpg";
   min-height: 100%;
 }
 
 .bgimg-2 {
-  background-image: "circuitboard.jpg";
+  background-image:"img_parallax2.jpg";
   min-height: 400px;
 }
 
 .bgimg-3 {
-  background-image: "index_background.jpg";
+  background-image:"img_parallax3.jpg";
   min-height: 400px;
 }
 
