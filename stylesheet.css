@@ -4,9 +4,6 @@ body, html {
   font: 400 15px/1.8 "Lato", sans-serif;
   color: #777;
 }
-body {
-    background-image: "index_background.jpg";
-}
 
 .bgimg-1, .bgimg-2, .bgimg-3 {
   position: relative;
@@ -18,12 +15,12 @@ body {
 
 }
 .bgimg-1 {
-  background-image: "index_background.jpg";
+  background-image: "soundboard.jpg";
   min-height: 100%;
 }
 
 .bgimg-2 {
-  background-image: "index_background.jpg";
+  background-image: "circuitboard.jpg";
   min-height: 400px;
 }
 
