@@ -1,0 +1,547 @@
+@font-face {
+    font-family: 'Schoolwires-Icon-Font';
+    src:    url('Schoolwires-Icon-Font.eot?pjilif');
+    src:    url('Schoolwires-Icon-Font.eot?pjilif#iefix') format('embedded-opentype'),
+            url('Schoolwires-Icon-Font.woff2?pjilif') format('woff2'),
+            url('Schoolwires-Icon-Font.ttf?pjilif') format('truetype'),
+            url('Schoolwires-Icon-Font.woff?pjilif') format('woff'),
+            url('Schoolwires-Icon-Font.svg?pjilif#Schoolwires-Icon-Font') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="bb-icon-"], [class*=" bb-icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'Schoolwires-Icon-Font' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.bb-icon-site-manager:before {
+    content: "\e917";
+}
+.bb-icon-dashboard_spaces:before {
+    content: "\e918";
+}
+.bb-icon-UltraInstagram:before {
+    content: "\e912";
+}
+.bb-icon-UltraTwitter:before {
+    content: "\e913";
+}
+.bb-icon-UltraFacebook:before {
+    content: "\e914";
+}
+.bb-icon-UltraYouTube:before {
+    content: "\e915";
+}
+.bb-icon-UltraMessage:before {
+    content: "\e916";
+}
+.bb-icon-UltraSearch:before {
+    content: "\e911";
+}
+.bb-icon-UltraArrowDown:before {
+    content: "\e910";
+}
+.bb-icon-UltraExternal_link:before {
+    content: "\e90f";
+}
+.bb-icon-UltraStudentSchedule:before {
+    content: "\e90e";
+}
+.bb-icon-UltraPrint:before {
+    content: "\e90d";
+}
+.bb-icon-UltraBus:before {
+    content: "\e906";
+}
+.bb-icon-UltraLibrary:before {
+    content: "\e907";
+}
+.bb-icon-UltraAttendance:before {
+    content: "\e908";
+}
+.bb-icon-UltraGrades:before {
+    content: "\e909";
+}
+.bb-icon-UltraCafeteria:before {
+    content: "\e90a";
+}
+.bb-icon-UltraAssignments:before {
+    content: "\e90b";
+}
+.bb-icon-UltraMissingAssignment:before {
+    content: "\e90c";
+}
+.bb-icon-attachment_video:before {
+    content: "\e905";
+}
+.bb-icon-triangle_play:before {
+    content: "\e904";
+}
+.bb-icon-ultra-desktop:before {
+    content: "\e903";
+}
+.bb-icon-ultra-attachments:before {
+    content: "\e902";
+}
+.bb-icon-ultra-close-x:before {
+    content: "\e901";
+}
+.bb-icon-Divider:before {
+    content: "\e900";
+}
+.bb-icon-help:before {
+    content: "\e801";
+}
+.bb-icon-user_tour:before {
+    content: "\e800";
+}
+.bb-icon-email2:before {
+    content: "\e67a";
+}
+.bb-icon-passkeys:before {
+    content: "\e676";
+}
+.bb-icon-Calendar:before {
+    content: "\e677";
+}
+.bb-icon-logout:before {
+    content: "\e678";
+}
+.bb-icon-off:before {
+    content: "\e91f";
+}
+.bb-icon-globe:before {
+    content: "\e679";
+}
+.bb-icon-options:before {
+    content: "\e671";
+}
+.bb-icon-Users:before {
+    content: "\e672";
+}
+.bb-icon-chart:before {
+    content: "\e673";
+}
+.bb-icon-CommentCount:before {
+    content: "\e674";
+}
+.bb-icon-Preview:before {
+    content: "\e675";
+}
+.bb-icon-AppsGrid:before {
+    content: "\e670";
+}
+.bb-icon-Alert:before {
+    content: "\e66f";
+}
+.bb-icon-UltraAppAboutTeacher:before {
+    content: "\e64f";
+}
+.bb-icon-UltraAppAlumniDirectory:before {
+    content: "\e650";
+}
+.bb-icon-UltraAppAnnouncements:before {
+    content: "\e651";
+}
+.bb-icon-UltraAppArticleLibrary:before {
+    content: "\e652";
+}
+.bb-icon-UltraAppAssignments:before {
+    content: "\e653";
+}
+.bb-icon-UltraAppBlog:before {
+    content: "\e654";
+}
+.bb-icon-UltraAppCalendar:before {
+    content: "\e655";
+}
+.bb-icon-UltraAppContent:before {
+    content: "\e656";
+}
+.bb-icon-UltraAppDiscussions:before {
+    content: "\e657";
+}
+.bb-icon-UltraAppDocumentViewerGoogle:before {
+    content: "\e658";
+}
+.bb-icon-UltraAppEmbedCode:before {
+    content: "\e65a";
+}
+.bb-icon-UltraAppFileLibrary:before {
+    content: "\e65b";
+}
+.bb-icon-UltraAppFlexEditor:before {
+    content: "\e65c";
+}
+.bb-icon-UltraAppHeader:before {
+    content: "\e65d";
+}
+.bb-icon-UltraAppHeadlines:before {
+    content: "\e65e";
+}
+.bb-icon-UltraAppImage:before {
+    content: "\e65f";
+}
+.bb-icon-UltraAppLinkLibrary:before {
+    content: "\e660";
+}
+.bb-icon-UltraAppLunchMenu:before {
+    content: "\e661";
+}
+.bb-icon-UltraAppMapsandDirections:before {
+    content: "\e662";
+}
+.bb-icon-UltraAppMinibase:before {
+    content: "\e663";
+}
+.bb-icon-UltraAppOnboardingApp:before {
+    content: "\e664";
+}
+.bb-icon-UltraAppPhotoGallery:before {
+    content: "\e665";
+}
+.bb-icon-UltraAppPodcasts:before {
+    content: "\e666";
+}
+.bb-icon-UltraAppPremiumVideoApp:before {
+    content: "\e667";
+}
+.bb-icon-UltraAppQandA:before {
+    content: "\e668";
+}
+.bb-icon-UltraAppSchoolDirectory:before {
+    content: "\e669";
+}
+.bb-icon-UltraAppSiteShortcuts:before {
+    content: "\e66a";
+}
+.bb-icon-UltraAppStaffDirectory:before {
+    content: "\e66b";
+}
+.bb-icon-UltraAppTable:before {
+    content: "\e66c";
+}
+.bb-icon-UltraAppUpcomingEvents:before {
+    content: "\e66d";
+}
+.bb-icon-UltraAppWiki:before {
+    content: "\e66e";
+}
+.bb-icon-ultra-link:before {
+    content: "\e64b";
+}
+.bb-icon-ultra-mail:before {
+    content: "\e64c";
+}
+.bb-icon-ultra-phone:before {
+    content: "\e64d";
+}
+.bb-icon-restart:before {
+    content: "\e64e";
+}
+.bb-icon-camera:before {
+    content: "\e63d";
+}
+.bb-icon-list:before {
+    content: "\e63e";
+}
+.bb-icon-numbered-list:before {
+    content: "\e642";
+}
+.bb-icon-link:before {
+    content: "\e643";
+}
+.bb-icon-bold:before {
+    content: "\e645";
+}
+.bb-icon-underline:before {
+    content: "\e646";
+}
+.bb-icon-italic:before {
+    content: "\e647";
+}
+.bb-icon-paragraph-left:before {
+    content: "\e648";
+}
+.bb-icon-paragraph-center:before {
+    content: "\e649";
+}
+.bb-icon-paragraph-right:before {
+    content: "\e64a";
+}
+.bb-icon-Smile:before {
+    content: "\e63c";
+}
+.bb-icon-Cube:before {
+    content: "\e62c";
+}
+.bb-icon-hex:before {
+    content: "\e62d";
+}
+.bb-icon-Accessibility:before {
+    content: "\e63a";
+}
+.bb-icon-pinch_stretch:before {
+    content: "\e625";
+}
+.bb-icon-swipe:before {
+    content: "\e626";
+}
+.bb-icon-flick:before {
+    content: "\e627";
+}
+.bb-icon-tap_hold:before {
+    content: "\e628";
+}
+.bb-icon-double_tap:before {
+    content: "\e629";
+}
+.bb-icon-tap:before {
+    content: "\e62b";
+}
+.bb-icon-cube:before {
+    content: "\e624";
+}
+.bb-icon-audio:before {
+    content: "\e623";
+}
+.bb-icon-lightbulb:before {
+    content: "\e608";
+}
+.bb-icon-content_app:before {
+    content: "\e63b";
+}
+.bb-icon-ContentApp:before {
+    content: "\e622";
+}
+.bb-icon-swipedown:before {
+    content: "\e618";
+}
+.bb-icon-lunch_menu:before {
+    content: "\e60b";
+}
+.bb-icon-global_shortcuts:before {
+    content: "\e60c";
+}
+.bb-icon-back:before {
+    content: "\e605";
+}
+.bb-icon-star_half:before {
+    content: "\e644";
+}
+.bb-icon-Refresh:before {
+    content: "\e641";
+}
+.bb-icon-twitter_plain:before {
+    content: "\e63f";
+}
+.bb-icon-facebook_plain:before {
+    content: "\e640";
+}
+.bb-icon-add:before {
+    content: "\e62f";
+}
+.bb-icon-remove:before {
+    content: "\e630";
+}
+.bb-icon-close:before {
+    content: "\e631";
+}
+.bb-icon-sched:before {
+    content: "\e632";
+}
+.bb-icon-Completed:before {
+    content: "\e633";
+}
+.bb-icon-Notifications:before {
+    content: "\e634";
+}
+.bb-icon-email:before {
+    content: "\e635";
+}
+.bb-icon-facebook:before {
+    content: "\e636";
+}
+.bb-icon-phone:before {
+    content: "\e637";
+}
+.bb-icon-textmessage:before {
+    content: "\e638";
+}
+.bb-icon-twitter:before {
+    content: "\e639";
+}
+.bb-icon-Remove:before {
+    content: "\e62e";
+}
+.bb-icon-sched2:before {
+    content: "\e210";
+}
+.bb-icon-x:before {
+    content: "\e211";
+}
+.bb-icon-Completed2:before {
+    content: "\e212";
+}
+.bb-icon-settings:before {
+    content: "\e62a";
+}
+.bb-icon-icon_staff_directory:before {
+    content: "\e659";
+}
+.bb-icon-icon_alert_round:before {
+    content: "\e617";
+}
+.bb-icon-icon_announcements:before {
+    content: "\e61d";
+}
+.bb-icon-icon_app_assignment:before {
+    content: "\e61c";
+}
+.bb-icon-icon_app_blog:before {
+    content: "\e61b";
+}
+.bb-icon-icon_app_event:before {
+    content: "\e61a";
+}
+.bb-icon-icon_app_headline:before {
+    content: "\e619";
+}
+.bb-icon-icon_app_linklibrary:before {
+    content: "\e21b";
+}
+.bb-icon-icon_app_photos:before {
+    content: "\e60d";
+}
+.bb-icon-icon_arrow_menu_down:before {
+    content: "\e616";
+}
+.bb-icon-icon_arrow_open_down:before {
+    content: "\e615";
+}
+.bb-icon-icon_arrow_up_open:before {
+    content: "\e614";
+}
+.bb-icon-icon_cardalert_upcomingevents:before {
+    content: "\e613";
+}
+.bb-icon-icon_checkbox:before {
+    content: "\e621";
+}
+.bb-icon-icon_close:before {
+    content: "\e612";
+}
+.bb-icon-icon_comments:before {
+    content: "\e611";
+}
+.bb-icon-icon_download:before {
+    content: "\e610";
+}
+.bb-icon-icon_export_external_link:before {
+    content: "\e60f";
+}
+.bb-icon-icon_flex_apps:before {
+    content: "\e226";
+}
+.bb-icon-icon_home_outline:before {
+    content: "\e227";
+}
+.bb-icon-icon_home:before {
+    content: "\e60e";
+}
+.bb-icon-icon_link:before {
+    content: "\e229";
+}
+.bb-icon-icon_location_pin:before {
+    content: "\e22a";
+}
+.bb-icon-icon_menu_bullet:before {
+    content: "\e22b";
+}
+.bb-icon-icon_menu_changedistrict:before {
+    content: "\e60a";
+}
+.bb-icon-icon_menu_offcanvas:before {
+    content: "\e609";
+}
+.bb-icon-icon_menu_signin:before {
+    content: "\e607";
+}
+.bb-icon-icon_menu_signout:before {
+    content: "\e606";
+}
+.bb-icon-icon_paperclip:before {
+    content: "\e604";
+}
+.bb-icon-icon_pencil:before {
+    content: "\e603";
+}
+.bb-icon-icon_photo_gallery:before {
+    content: "\e600";
+}
+.bb-icon-icon_rating_fill:before {
+    content: "\e602";
+}
+.bb-icon-icon_rating_outline:before {
+    content: "\e601";
+}
+.bb-icon-icon_schooldirectory:before {
+    content: "\e237";
+}
+.bb-icon-icon_share:before {
+    content: "\e620";
+}
+.bb-icon-icon_star_user_myview:before {
+    content: "\e61f";
+}
+.bb-icon-user:before {
+    content: "\e61e";
+}
+.bb-icon-rss:before {
+    content: "\e23b";
+}
+.bb-icon-check:before {
+    content: "\e23c";
+}
+.bb-icon-file-css:before {
+    content: "\e23d";
+}
+.bb-icon-tools:before {
+    content: "\e23e";
+}
+.bb-icon-bolt:before {
+    content: "\e23f";
+}
+.bb-icon-code:before {
+    content: "\e240";
+}
+.bb-icon-bold2:before {
+    content: "\e919";
+}
+.bb-icon-underline2:before {
+    content: "\e91a";
+}
+.bb-icon-italic2:before {
+    content: "\e91b";
+}
+.bb-icon-paragraph-left2:before {
+    content: "\e91c";
+}
+.bb-icon-paragraph-center2:before {
+    content: "\e91d";
+}
+.bb-icon-paragraph-right2:before {
+    content: "\e91e";
+}
+

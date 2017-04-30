@@ -1,0 +1,2422 @@
+﻿@font-face {
+    font-family: "Noto Serif";
+    src: url("../../../GlobalAssets/webfonts/NotoSerif-Regular.ttf") format("truetype");
+}
+
+/* GLOBAL STYLES */
+
+#dashboard-panel *, #dashboard-panel *:before, #dashboard-panel *:after,
+#dashboard-panel2 *, #dashboard-panel2 *:before, #dashboard-panel2 *:after {
+    -webkit-box-sizing: initial; 
+    -moz-box-sizing: initial; 
+    box-sizing: content-box;
+}
+
+#dashboard-panel a, #dashboard-panel2 a {
+    color: #333;
+}
+
+/* WIDGETS */
+
+div.bb-widget {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+div.bb-widget div.bb-header {
+    overflow: visible;
+    position: relative;
+}
+
+div.bb-widget div.bb-header div.bb-horizontal > * {
+    float: left;
+    display: inline-block;
+    height: 100%;
+}
+  
+div.bb-widget div.bb-header h1 {
+    font-family: "Noto Serif", times;
+    font-size: 30px;
+    font-weight: normal;
+    color: #333;
+    margin: 40px 10px 40px 30px; /*40px 10px 40px 40px;*/
+    display: inline-block;
+}
+
+div.bb-widget div.bb-header p {
+    font-family: "OpenSans-Regular";
+    font-size: 12px;
+}
+
+div.bb-widget:focus {
+    outline:none;
+}
+
+/* END WIDGETS */
+
+
+
+/* BUTTONS */
+
+div.bb-buttons {
+	text-align: right;
+	padding: 20px 30px 30px 30px;
+}
+
+a.bb-button,
+button.bb-button {
+	font-family: "OpenSans-SemiBold";
+	font-size: 12px;
+	text-transform: uppercase;
+	border: 1px solid #efefef;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #efefef;
+    transition: all .1s ease-in-out;
+    cursor: pointer;
+}
+
+a.bb-button.primary,
+button.bb-button.primary {
+	border: 1px solid #999;
+}
+
+a.bb-button.action,
+button.bb-button.action {
+    font-family: "OpenSans-Regular";
+  	font-size: 12px;
+    color: #333;
+    background-color: #f8f8f8;
+    border: 1px solid #dadada;
+    border-radius: 2px;
+    text-decoration: none;
+    text-transform: none;
+    padding: 7px 15px 7px 15px;
+}
+
+a.bb-button:active,
+button.bb-button:active {
+	transform: translateY(1px);
+}
+
+p.showmore {
+	font-family: "OpenSans-SemiBold";
+	font-size: 13px;
+	margin: 10px 0 0 0;
+    color: #1F75A3;
+	cursor: pointer;
+}
+
+p.showmore:hover {
+	color: #C575D5;
+}
+
+
+p.showmore span.bb-stream-showmoreIcon {
+    font-size: 14px;
+    display: inline;
+    position: absolute;
+    margin-top: 16px;
+    margin-left: 4px;
+}
+
+p.showmore span.bb-stream-showMoreText {
+    display: inline-block;
+}
+
+p.showmore span.bb-stream-icon-holder {
+    width:24px;
+    height: 24px;
+    display: inline-block;
+    margin-right: 10px;
+
+}
+
+/* stream norecords */
+div.bb-detail > p.norecords {
+    padding-left: 20px;
+}
+
+.progress-circle.processing {
+    display: inline;
+    position: absolute;
+    margin-top: 6px;
+}
+
+.progress-circle.processing .progress-circle-svg {
+    display: none;
+    vertical-align: bottom;
+    margin-right: 15px;
+    -webkit-animation: progress-rotate 4s linear 0s infinite;
+    -ms-animation: progress-rotate 4s linear 0s infinite;
+    animation: progress-rotate 4s linear 0s infinite;
+}
+.progress-circle .progress-circle-svg {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.progress-circle.processing .progress-circle-svg .back {
+    stroke: transparent;
+}
+.progress-circle .progress-circle-svg path {
+    stroke: #eed6f2;
+    stroke-width: 16;
+    transition: stroke 300ms;
+}
+.progress-circle.processing .progress-circle-svg .bar {
+    stroke-linecap: round;
+    stroke-dasharray: 45px;
+}
+.progress-circle .progress-circle-svg .bar {
+    stroke: #c575d2;
+}
+.progress-circle .progress-circle-svg path {
+    stroke: #eed6f2;
+    stroke-width: 16;
+    transition: stroke 300ms;
+}
+
+@-webkit-keyframes progress-rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg); } 
+
+}
+@-ms-keyframes progress-rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg); } 
+
+}
+@keyframes progress-rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg); } 
+
+}
+
+div.section-layer-close:focus:not(:hover) {
+    outline: 2px solid #c575d5;
+    background-color: #333 !important;
+}
+
+div.section-layer-close:focus {
+    outline: 1px solid #c575d5;
+}
+
+/* END BUTTONS */
+
+
+/* HOVER CARDS */
+
+div.bb-hover-container {
+	position: relative;
+	display: inline-block;
+}
+
+div.bb-hover-container div.bb-hover-card {
+	display: none;
+	/*cursor: default;*/
+}
+
+div.bb-hover-container:hover div.bb-hover-card {
+	display: initial;
+	position: absolute;
+}
+
+/* END HOVER CARDS */
+
+
+
+/* LOADING INDICATOR */
+
+div.ui-loading { /*wrapper*/
+	font-family: Arial;
+}
+
+div.ui-loading.small { /*small message*/
+	font-size: 10pt;
+}
+
+div.ui-loading.large { /*large mesage*/
+    width: 100%;
+    height: 44px;
+	background: transparent url("../../../GlobalAssets/Images/large-loader.gif") no-repeat 50% 100%;
+}
+
+div.ui-loading.large.template { /*large mesage*/
+    width: 100%;
+    height: 44px;
+	background: transparent url("../../../GlobalAssets/Images/large-loader.gif") no-repeat 50% 50%;
+}
+
+/* END LOADING INDICATOR */
+
+/* END GLOBAL STYLES */
+
+
+/* END-USER SIDEBAR */
+
+/* main sidebar container */
+div#dashboard-sidebar {
+    width: 50px;
+    position: fixed;
+    background-color: #232323;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10000;
+    font-family: "OpenSans-Light", sans-serif;
+}
+
+/* sidebar grouping container */
+div#dashboard-sidebar 
+div.dashboard-sidebar-item.dashboard-sidebar-border-bottom {
+    border-bottom: 1px solid #363636;
+}
+
+/* sidebar group header container */
+div#dashboard-sidebar 
+div.dashboard-sidebar-item.dashboard-sidebar-header {
+    height: 50px;
+    background-color: #171717;
+}
+    
+/* sidebar item */
+div#dashboard-sidebar 
+div.dashboard-sidebar-item {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+/* sidebar item hovered and selected */
+div#dashboard-sidebar 
+div.dashboard-sidebar-item.selected,
+div#dashboard-sidebar 
+div.dashboard-sidebar-item:hover {
+    background-color: #181818;
+}
+
+/* sidebar avatar */
+div#dashboard-sidebar 
+div.dashboard-sidebar-item 
+img.dashboard-sidebar-avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 17px;
+    box-sizing: border-box;
+    margin: 8px;
+    border: 2px solid #232323;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: border ease-in 0.1s;
+}
+  
+/* sidebar avatar selected and hover */
+div#dashboard-sidebar 
+div.dashboard-sidebar-item.selected 
+img.dashboard-sidebar-avatar,
+div#dashboard-sidebar 
+div.dashboard-sidebar-item:hover 
+img.dashboard-sidebar-avatar {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    border: 2px solid #FFF;
+}
+  
+/* sidebar no avatar */
+div#dashboard-sidebar 
+div.dashboard-sidebar-item 
+div.dashboard-sidebar-avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 17px;
+    border: 2px solid #232323;
+    box-sizing: border-box;
+    margin: 8px;
+    display: inline-block;
+    background-color: #4a4a4a;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    line-height: normal;
+    transition: border ease-in 0.1s;
+}
+  
+/* sidebar no avatar selected and hover */
+div#dashboard-sidebar 
+div.dashboard-sidebar-item.selected
+div.dashboard-sidebar-avatar,
+div#dashboard-sidebar 
+div.dashboard-sidebar-item:hover
+div.dashboard-sidebar-avatar {
+    color: #fff;
+    border: 2px solid #FFF;
+}
+  
+/* sidebar no avatar initials */
+div#dashboard-sidebar 
+div.dashboard-sidebar-item 
+div.dashboard-sidebar-avatar 
+span {
+    margin-top: 5px;
+    display: inline-block;
+}
+
+/* sidebar header avatar */
+div#dashboard-sidebar 
+div.dashboard-sidebar-item.dashboard-sidebar-header 
+img.dashboard-sidebar-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    border: 2px solid #171717;
+    margin: 3px;
+    -webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+    cursor: default; /* TEMPORARY UNTIL WE MOVE MY ACCOUNT HERE */
+}
+
+/* sidebar header avatar */
+div#dashboard-sidebar 
+div.dashboard-sidebar-item.dashboard-sidebar-header:hover 
+img.dashboard-sidebar-avatar {
+    border: 2px solid #FFF;
+}
+
+/* sidebar icon */
+div#dashboard-sidebar 
+div.dashboard-sidebar-item 
+span.dashboard-sidebar-icon {
+    font-size: 24px;
+    margin: 13px;
+    display: inline-block;
+    color: #a5a5a5;
+    cursor: pointer;
+    transition: 0.2s ease all;
+}
+
+/* sidebar icon small */
+div#dashboard-sidebar 
+div.dashboard-sidebar-item 
+span.dashboard-sidebar-icon.dashboard-sidebar-icon-small {
+    font-size: 16px;
+    margin-left: 16px
+}
+
+/* sidebar icon hovered */
+div#dashboard-sidebar 
+div.dashboard-sidebar-item 
+span.dashboard-sidebar-icon:hover {
+    color: #fff;
+    transition: 0.2s ease all;
+}
+
+/* sidebar icon selected */
+div#dashboard-sidebar 
+div.dashboard-sidebar-item.selected 
+span.dashboard-sidebar-icon {
+    color: #fff;
+}
+
+div.showXSOnly {
+    display: none;
+}
+
+/*Labels for sidebar items that only display at smallest breakpoint*/
+@media only screen and (max-width: 480px) {
+    div.sidebar-tooltip-hoverer {
+        display:none !important;
+    }
+}
+
+/*Sidebar tooltip styling*/
+.sidebar-tooltip-hoverer {
+    background-color: #262626;
+    border-radius: 5px;
+    font-family: inherit;
+    pointer-events:none;
+    position: absolute;
+    z-index: 99999;
+    white-space: nowrap; 
+    padding: 14px 20px 14px 20px;
+    position: absolute;
+    font-size: 14px;
+    color: white;
+    line-height: 20px;
+    border: 1px solid rgba(255, 255, 255, .5);
+}
+
+/*Tooltip arrow pointing to item*/
+.sidebar-tooltip-hoverer:last-child:before {
+    border: solid;
+    border-color: transparent;
+    border-right-color: #262626;
+    border-width: 12px;
+    right: 99.5%;
+    top: 11px;
+    width: 0;
+    height:0;
+    content: "";
+    position: absolute;
+    pointer-events: none;
+    display:block;
+    z-index: 9999;
+}
+	
+/*Arrow border*/
+.sidebar-tooltip-hoverer:after    {
+    display:block;
+    border: solid;
+    width: 0;
+    height:0;
+    border-color: transparent;
+    border-right-color: rgba(255, 255, 255, .3);
+    border-width: 13px;
+    right: 99.7%;
+    top: 9.5px;
+    content: "";
+    position: absolute;
+    pointer-events: none;
+    transition-delay: 0.2s;
+    z-index: 999;
+}
+
+/*Anchors the logout and help to bottom of sidebar*/	
+#dashboard-sidebar-logout {
+    position: absolute;
+    bottom: 50px;
+}
+
+#dashboard-sidebar-help {
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* END END-USER SIDEBAR */
+
+
+
+/* Dashboard specific section layer styles */
+
+#dashboard-panel.section-layer.opened,
+#dashboard-panel2.section-layer.opened {
+  left: 50px !important;
+  font-family: "OpenSans-Regular", sans-serif;
+  color: #333;
+  background-color: #f7f7f7;
+}
+
+#dashboard-panel div.bb-widget,
+#dashboard-panel2 div.bb-widget {
+  /* background-color: #f7f7f7; */
+}
+
+#dashboard-panel div.bb-widget > div.bb-header,
+#dashboard-panel2 div.bb-widget > div.bb-header {
+  color: #333;
+  border-bottom: 1px solid #d3d3d3;
+  background-color: #f7f7f7;
+  padding:20px;
+}
+
+#dashboard-panel div.bb-widget > div.bb-header h2, #dashboard-panel2 div.bb-widget > div.bb-header h2 {
+   margin: 0 0 10px 0;
+   padding: 0;
+   font-family: "OpenSans-Regular";
+   font-size: 14px;
+   display: block;
+}
+
+#dashboard-panel div.bb-widget > div.bb-header h1, #dashboard-panel2 div.bb-widget > div.bb-header h1 {
+    font-weight: normal;
+    font-size: 28px;
+    margin: 0 15px -10px 0;
+    display: inline-block;
+    line-height: 1;
+    padding: 0 0 5px 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 95%;
+}
+
+#dashboard-panel div.bb-widget.dashboard-student-profile div.bb-header.profile {
+    background-color: #e9e9e9;
+    border-bottom: 1px solid #d3d3d3;
+    min-height:40px;
+}
+#dashboard-panel div.bb-widget.dashboard-student-profile div.bb-header.profile h1 {
+    max-width:100%;
+}
+
+#dashboard-panel .section-layer-container, #dashboard-panel2 .section-layer-container { 
+    overflow: hidden !important; 
+}
+
+#dashboard-panel div.bb-widget, 
+#dashboard-panel2 div.bb-widget { 
+    height: 100%; 
+}
+
+#dashboard-panel div.bb-header, #dashboard-panel2 div.bb-header {
+    height:57px;
+}
+
+#dashboard-panel div.bb-header.dashboard-smallheader, #dashboard-panel2 div.bb-header.dashboard-smallheader {
+    height:28px;
+}
+
+#dashboard-panel div.bb-detail, 
+#dashboard-panel2 div.bb-detail { 
+    position: absolute; 
+    top: 98px;
+    bottom: 48px; 
+    overflow-y: auto; 
+    overflow-x: hidden;
+    left:0;
+    right:0;
+}
+#subscriptions-detailsection {
+    margin-bottom:60px;
+}
+#dashboard-panel div.bb-detail.dashboard-smallheader, 
+#dashboard-panel2 div.bb-detail.dashboard-smallheader { 
+    top: 70px;
+}
+
+#dashboard-panel .bb-widget > .bb-header  h2 ~ #dashboard-panel  div.bb-detail{
+    top: 50px;
+}
+
+#dashboard-panel div.bb-footer, 
+#dashboard-panel2 div.bb-footer { 
+    background:white;
+    position: absolute; 
+    bottom: 0; 
+    left:0;
+    right:0;
+}
+/* End dashboard specific section layer styles */
+
+
+/* STREAM */
+
+/* stream list */
+ul.bb-stream {
+	list-style-type: none;
+	margin: 60px 0 40px 0;
+	padding: 0;
+}
+
+/* stream list item */
+ul.bb-stream > li {
+	padding: 0;
+	margin: 0;
+    /* For Firefox */
+    word-wrap: break-word;
+}
+	
+/* stream list item inner app and social containers */
+ul.bb-stream > li > div {
+	margin: 0 0 0 60px;
+	padding: 30px 20px 10px 55px;
+	border: 0;
+	border-left: 1px solid #dadada;
+}
+	
+/* stream list item hover */
+ul.bb-stream > li:hover, 
+ul.bb-stream > li.bb-stream-focused {
+	background-color: #f7f7f7;
+	cursor: pointer;
+}
+	
+/* stream list item hover - remove for headings */
+ul.bb-stream > li.bb-stream-heading:hover {
+	background-color: #fff;
+	cursor: default;
+}
+	
+/* stream list main heading */
+ul.bb-stream li.bb-stream-heading {
+	padding: 0 0 20px 0;
+    margin: 0 0 0 60px;
+	position: relative;
+	border-left: 1px solid #dadada;
+}
+	
+/* stream list main heading text (today/recent) */
+ul.bb-stream li.bb-stream-heading h1 {
+	font-family: "OpenSans-Light";
+    color: #333;
+    font-weight: lighter;
+    font-size: 32px;
+    position: absolute;
+    top: -22px;
+    /*left: 8%;*/
+    margin: 0 0 0 0;
+    padding: 0 10px 0 0;
+    border: 0;
+    display: inline-block;
+    width: 97%;
+}
+
+ul.bb-stream li.bb-stream-heading h1 span {
+    display: inline-block;
+    padding: 0 3% 0 45px;
+}
+	
+ul.bb-stream li.bb-stream-heading h1:before {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAO1JREFUKBWNks0NgkAQhd0BLyAFeAGjdODZqx4twr6swcST1qAd4A9cLADhIgTnM2LIJkY32WTm7Xu7M2/W9DqraZp+kiRT13UXwFVV7eI4PhpjHi3NtEGWZRMVbDzPGzmOMwCv6/peFMVZRFZhGB7AXoI0TacKboMgGALaK8/zm142U9FJKEP3+hsZMWe8Dleo2ff9sX2rnVMqXNEG523NNqmbw8EM6YL/xKLW7dWN4hcZx7BZ8Lksy8svAfbClfdQllj3TcQZs4D7GRyzwF51bKIN+ogpQ1+/ariMougM9hGQ4PP7a8zJ6c/+Gk+pLXwU0LIwvgAAAABJRU5ErkJggg==');
+    content: "";
+    margin-left: -146px;
+    margin-right: 0;
+    width: 152px;
+    display: inline-block;
+    height: 18px;
+    background-size: 12px;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+	
+/* stream item date/time */
+ul.bb-stream li span.bb-date {
+	display: block;
+	font-size: 10px;
+	color: #333;
+	font-family: "OpenSans-Italic";
+    margin: 0 0 2px 0;
+}
+
+.bb-stream-carddatetimespan{
+    max-width: 0;
+    transition: all ease-in-out 300ms;
+    display: inline;
+    height: auto;
+    overflow: hidden;
+    position: absolute;
+    margin-left: 4px;
+    white-space: nowrap;
+}
+
+.bb-stream li:hover .bb-stream-carddatetimespan{
+    max-width: 150px;
+}
+	
+/* stream item icon */
+ul.bb-stream > li > div > span.bb-icon {
+	margin: -12px 0 0 -75px;
+    display: inline-block;
+    font-size: 36px;
+    color: #999;
+    width: 50px;
+    background-color: #fff;
+}
+	
+/* stream item icon on hover */
+ul.bb-stream > li:hover > div > span.bb-icon,
+ul.bb-stream > li.bb-stream-focused > div > span.bb-icon {
+	background-color: #f7f7f7;
+}
+	
+/* stream item article accent title */
+ul.bb-stream li > div > h2 {
+	margin: -20px 0 0 0;
+	padding: 0;
+	font-size: 14px;
+	font-family: "OpenSans-SemiBold";
+	margin-bottom: 0;
+}
+
+/* stream item main article title */
+ul.bb-stream li > div > h1 {
+	margin: 5px 0 0 0;
+	padding: 0;
+	font-size: 16px;
+	font-family: "OpenSans-Regular";
+	font-weight: 300;
+    line-height: 24px;
+}
+
+/* stream item article sub title */
+ul.bb-stream li > div > h3 {
+	margin: 8px 0 0 0;
+	padding: 0;
+	font-size: 14px;
+	font-family: "OpenSans-Italic";
+	font-weight: normal;
+}
+	
+/* stream item content */
+ul.bb-stream li > div > div {
+	margin: 5px 0 5px 0;
+	padding: 0;
+	font-size: 13px;
+	font-family: "OpenSans-Regular";
+    line-height: 20px;
+	color: #333;
+}
+	
+/* stream item accent image */
+ul.bb-stream li > div > img.bb-accent-image {
+	margin: 15px 0 15px -15%;
+	width: 300px;
+	border-radius: 5px;
+    max-width: 100%;
+}
+	
+/* stream item gallery image container */
+ul.bb-stream li > div > div.bb-image-strip {
+	margin: 15px 0 0 0;
+	border-radius: 5px;
+}
+	
+/* stream item gallery images */
+ul.bb-stream li > div > div.bb-image-strip img {
+	margin: 0 10px 0 0;
+	border-radius: 5px;
+	width: 100px;
+}
+
+/* stream detail fix for photo gallery*/
+.galleria-container {
+    max-width: 99% !important;
+}
+	
+/* stream item social bar */
+ul.bb-stream li > div.bb-social-bar {
+	font-size: 12px;
+	padding: 0 10px 20px 8%;
+    overflow: hidden;
+}
+	
+/* stream item social bar hover */
+ul.bb-stream li:hover > div.bb-social-bar {
+	cursor: default;
+}
+	
+/* stream item social bar links */
+ul.bb-stream li > div.bb-social-bar a.bb-detail-link {
+	float: left;
+	margin-top: 2px;
+    color: #666;
+}
+	
+/* stream item social bar ratings */
+ul.bb-stream li > div.bb-social-bar .sw-ratings-container {
+	float: left;
+    width: 120px;
+    margin-top: 2px;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-bottom: 3px;
+    border-left: 1px solid #efefef;
+}
+	
+/* stream item social bar ratings */
+ul.bb-stream li > div.bb-social-bar div.star-rating a {
+	margin-top: 0px;
+}
+	
+/* show more link */
+p.showmore.stream {
+	margin: 0 0 20px 26%;
+    padding: 10px 10px 20px 0;
+    display: inline-block;
+    
+}
+
+/* END STREAM */
+
+
+
+/* STREAM DETAIL */
+
+/* detail widget */
+div.bb-widget.dashboard-student-detail {
+	/* background-color: #f7f7f7; */
+}
+
+/* detail heading */
+div.dashboard-stream-detail div.bb-header h1,
+div.dashboard-student-detail div.bb-header h1 {
+	font-weight: normal;
+	font-size: 28px;
+	margin: 20px 120px 0 20px;
+	display: inline-block;
+}
+	
+/* detail sub-heading */
+div.dashboard-stream-detail div.bb-header h2 {
+	font-family: "OpenSans-Regular";
+	font-size: 14px;
+	margin: 0 30px 20px 20px;
+}
+	
+/* detail float button */
+div.dashboard-stream-detail div.bb-header > span {
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    font-family: "OpenSans-Regular";
+    font-size: 20px;
+}
+div.dashboard-stream-detail.dashboard-smallheader div.bb-header > span {
+    top: 47px;
+}
+	
+/* detail float button link */
+div.dashboard-stream-detail div.bb-header span a {
+	text-decoration: none;
+}
+	
+/* detail float button link hover */
+div.dashboard-stream-detail div.bb-header span a:hover {
+	color: black;
+}
+	
+/* detail detail container */
+div.dashboard-stream-detail div.bb-detail {}
+	
+/* detail sub-sub-header */
+div.dashboard-stream-detail div.bb-detail > h3 {
+	color: #666;
+	font-size: 12px;
+	font-family: "OpenSans-Italic";
+	margin: 20px 0 20px 20px;
+}
+	
+/* detail body */
+div.dashboard-stream-detail div.bb-detail > div {
+	color: #333333;
+	font-size: 14px;
+	font-family: "OpenSans-Regular";
+	margin: 20px 20px 20px 20px;
+	line-height: 2;
+}
+
+/* detail social container */
+div.dashboard-stream-detail div.bb-social-container {
+	margin: 20px 20px 20px 20px;
+}
+	
+/* detail headline accent images */
+div.dashboard-stream-detail div.bb-app-headline img {
+    margin-left: 20px;
+    max-width: 90% !important;
+}
+	
+/* detail attachments list */
+div.dashboard-stream-detail div.bb-detail > ul.bb-attachments {
+	color: #999;
+	font-size: 14px;
+	font-family: "OpenSans-Regular";
+	margin: 40px 20px 20px 20px;
+	list-style-type: none;
+	overflow: hidden;
+	padding: 40px 0 0 0;
+	border-top: 1px solid #efefef;
+}
+	
+/* detail attachment items */
+div.dashboard-stream-detail div.bb-detail > ul.bb-attachments li {
+	margin: 0 40px 10px 0;
+	display: inline-block;
+	float: left;
+	padding: 0;
+	width: 200px;
+}
+	
+/* detail attachment item text */
+div.dashboard-stream-detail div.bb-detail > ul.bb-attachments li p {
+	margin: 0;
+	padding: 0;
+	font-family: "OpenSans-SemiBold";
+	font-size: 12px;
+	color: #666;
+	white-space: nowrap;
+  	overflow: hidden;
+}
+	
+/* detail attachment item image */
+div.dashboard-stream-detail div.bb-detail > ul.bb-attachments li img {
+	width: 180px;
+}
+	
+/* detail attachment item desc */
+div.dashboard-stream-detail div.bb-detail > ul.bb-attachments li p:last-child {
+	font-family: "OpenSans-Italic";
+	font-weight: normal;
+	color: #999;
+	font-size: 10px;
+	height: 40px;
+	white-space: normal;
+}
+
+/*STREAM DETAIL SPECIFIC COMMENT STYLES*/
+
+/*comment box border on focus in stream detail. different from end user view*/
+#dashboard-panel2 .ui-comment-new:focus,
+#dashboard-panel2 .ui-comment-add-button:focus,
+#dashboard-panel2 .ui-comment-field:focus {
+  outline: none;
+  border-color: #c66bd7;
+}
+
+div.ui-comments-container div.ui-comment-avatar img.ui-comment-avatar-img {
+    margin-left: 0px;
+}
+
+#dashboard-panel2 * div.ui-comment-new-container *,
+#dashboard-panel2 * div.ui-comment-new-container *:before,
+#dashboard-panel2 * div.ui-comment-new-container *:after {
+    box-sizing:border-box;
+    -webkit-box-sizing: border-box;
+}
+
+/*END STREAM DETAIL SPECIFIC COMMENT STYLES*/
+
+/* END STREAM DETAIL */
+
+
+/* SITE ASSOCIATIONS IN STREAM */
+
+div.dashboard-site-associations div.bb-detail {
+	overflow: hidden;
+}
+div.dashboard-site-associations > div.bb-header h1, div.dashboard-site-associations div.bb-widget > div.bb-header h1 {
+    padding-right:30px;
+    max-width:88% !important;
+}
+
+div.dashboard-site-associations div.bb-header button.bb-icon-UltraSearch {
+    color:#4a4a4a;
+    font-size:20px;
+    margin-right: 30px;
+    right: 0px;
+    position: absolute;
+    background:none;
+    border:none;
+}
+
+div.dashboard-site-associations div.bb-header button.bb-icon-UltraSearch:hover {
+    cursor:pointer;
+}
+	
+div.dashboard-site-associations div.bb-detail input[type='text'] {
+    outline: none;
+    border: 1px solid #e5e5e5;
+    transition: all .15s ease-in-out;
+    background-color: #fff;
+    background-image: url("data:image/png;base64,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");
+    background-repeat: no-repeat;
+    background-size: 25px auto;
+    background-position: 5px;
+    padding-left: 35px;
+    padding-bottom:0px;
+    padding-top:0px;
+    border-color:#CDCDCD;
+    border-radius:2px;
+    margin:20px 30px 0px 30px;
+    width:80%;
+    height:0px;
+    visibility:hidden;
+    font-size:2px;
+    color:#4a4a4a;
+    transition:all 150ms cubic-bezier(0.39, 0.58, 0.18, 0.99);
+}
+div.dashboard-site-associations div.bb-detail input.list-filter-input { /* list filter textbox */
+	padding-left: 35px;
+}
+
+div.dashboard-site-associations div.bb-detail input[type='text'].isVisible {
+    height:25px;
+    visibility: visible;
+    padding-top:7px;
+    padding-bottom:7px;
+    margin-bottom:20px;
+    font-size:20px;
+}
+
+div.dashboard-site-associations div.bb-detail input[type='text']:focus {
+	border-color: #c66bd7;
+    background-color: #fafafa;
+}
+
+div.dashboard-site-associations div.bb-detail ul {
+	list-style-type: none;
+	margin: 0 30px 30px 30px;
+	padding: 0;
+	width: 90%;
+}
+
+div.dashboard-site-associations div.bb-detail ul li {
+    float: left;
+    display: inline-block;
+    width:48%;
+    position:relative;
+}
+@media (max-width: 700px) {
+    div.dashboard-site-associations div.bb-detail ul li {
+        width: 95%;
+    }
+}
+
+div.dashboard-site-associations div.bb-detail ul li label span {
+    font-weight:normal;
+    font-size:14px;
+    font-family:"OpenSans-Regular";
+    position:relative; 
+    margin-left:35px;
+}
+
+div.dashboard-site-associations div.bb-detail ul li label input {
+    background: no-repeat white;
+    width: 20px;
+    color: white;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: sub;
+    cursor: pointer;
+    position:absolute;
+    top:10px;
+    left:0px;
+}
+
+div.dashboard-site-associations div.bb-detail ul li label input:checked {
+    background-image: rgba(0, 0, 0, 0) url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAALCAYAAABPhbxiAAAAAXNSR0IArs4c6QAAAQZJREFUKBVjYCARPJv5jAukhZEUfTcnPDL9w/B/lSAnqzYTsRpvTH6h+IeRYQMTE0OeVLrUN6I0Xp3zWOjPv5/bGP8ztGrmyW8GWQbWCHM3NttvT/rPzvD1/wag3CatArlpMDVMIE3vv/++en3SY3uYIIz+//8/469/jxcy/Gd4pp0nVwETB9FMYPcyMSX8+/9/NbrmaxMfdQKDT4qNSTaekRHoUCQAdqpmnuxBJkbGUGTN1yY8yvrPyODLwM0YoJrH+BNJD5iJEh3XJz92+Pfv/yoGhv9AvzCmMjOx2WjkStxH1wTio2gECdyY+MTxL8O/lQyMjD7aebKnQGJEg6tTX/EQUgwA35JgtwkUUAEAAAAASUVORK5CYII=") repeat scroll 0 0;
+}
+	
+div.dashboard-site-associations div.bb-footer div.bb-buttons {
+	padding: 20px;
+}
+.dashboard-site-associations button.bb-button.primary {
+    background: #333;
+    color: #fff;
+    width: 140px;
+    text-align: center;
+    height: 25px;
+    border-radius: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* END SITE ASSOCIATIONS IN STREAM */
+
+
+/* CALENDAR-SPECIFIC STREAM DETAIL */
+
+/* events list */
+div.dashboard-stream-detail div.bb-detail.bb-app-calendar ul {
+	list-style-type: none;
+	margin: 30px 0 30px 20px;
+	padding: 0;
+	font-family: "OpenSans-Regular";
+	color: #666;
+}
+	
+/* events list items */
+div.dashboard-stream-detail div.bb-detail.bb-app-calendar li {
+	margin: 0 0 30px 0;
+	padding: 0 0 30px 0;
+	border-bottom: 1px solid #efefef;
+}
+	
+/* events list items - remove last border */
+div.dashboard-stream-detail div.bb-detail.bb-app-calendar li:last-child {
+	border: 0;
+}
+	
+/* event category color */
+div.dashboard-stream-detail div.bb-detail.bb-app-calendar li > span {
+	display: inline-block;
+	height: 15px;
+	width: 15px;
+	border-radius: 2px;
+	margin: 0 10px 0 0;
+}
+
+/* event category tooltip - the tooltips themselves are appended to the body to prevent clipping*/
+div.dashboard-stream-detail div.bb-detail.bb-app-calendar li > span.event-tooltip {
+    position: relative;
+}
+
+#stream-detail-holder div.event-tooltip-hoverer{
+    background: #333;
+    border-radius: 5px;
+    color: #fff;
+    font-size:16px;
+    pointer-events:none;
+    padding: 15px;
+    position: absolute;
+    z-index: 9999;
+    white-space: nowrap; 
+}
+		
+#stream-detail-holder div.event-tooltip-hoverer:after{
+    border: solid;
+    border-color: #333 transparent;
+    border-width: 12px 8px 0 8px;
+    top: 100%;
+    left:10px;
+    bottom: 5px;
+    content: "";
+    position: absolute;
+    pointer-events:none;
+    z-index: 9999;
+}
+	
+/* event title */
+div.dashboard-stream-detail div.bb-detail.bb-app-calendar li > h2 {
+	display: inline-block;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+    width: 80%;
+}
+	
+/* event title link */
+div.dashboard-stream-detail div.bb-detail.bb-app-calendar li > h2 > a {
+    color: inherit;
+    text-decoration: none;
+}
+	
+/* event date and time */
+div.dashboard-stream-detail div.bb-detail.bb-app-calendar li > h3 {
+	font-family: "OpenSans-Italic";
+	font-weight: normal;
+	font-size: 12px;
+	margin: 0 0 0 27px;
+	padding: 0;
+	color: #333333;
+}
+	
+/* event title */
+div.dashboard-stream-detail div.bb-detail.bb-app-calendar li > div {
+	font-size: 14px;
+	margin: 15px 0 0 27px;
+	padding: 0;
+    width: 80%;
+}
+
+/* END CALENDAR-SPECIFIC STREAM DETAIL */
+
+
+/* PHOTO GALLERYR-SPECIFIC STREAM DETAIL */
+
+/* overwrite font color in comments */
+div.dashboard-stream-detail div.bb-detail.bb-app-photogallery > div div.app-level-social-commenting {
+    color: #333;
+}
+
+/* END PHOTO GALLERY-SPECIFIC STREAM DETAIL */
+
+
+
+/* STUDENT PROFILE */
+
+/* student profile widget */
+div.bb-widget.dashboard-student-profile {
+    background: #f7f7f7;
+}
+	
+/* student profile widget */
+#dashboard-panel div.bb-widget.dashboard-student-profile div.bb-header { 
+	border-bottom: 0;
+	height: 0px;
+}
+	
+/* student profile header container */
+div.bb-header div.bb-avatar-head {
+	text-align: center;
+	/* background: #e9e9e9; */
+	height: 80px;
+}
+	
+/* student profile avatar */
+div.bb-header div.bb-avatar-head img.bb-avatar {
+   	width: 120px;
+   	height: 120px;
+  	border-radius: 60px;
+  	margin: 0px 0 10px 0;
+    max-width: 120px;
+    max-height: 120px;
+}
+  
+/* student profile no avatar */
+div.bb-header div.bb-avatar-head div.bb-avatar {
+  	width: 120px;
+  	height: 120px;
+  	border-radius: 60px;
+  	margin: 20px 0 10px 0;
+  	display: inline-block;
+  	background-color: gray;
+  	color: #fff;
+  	font-size: 50px;
+  	text-align: center;
+    line-height: normal;
+}
+  
+/* student profile no avatar initials */
+div.bb-header div.bb-avatar-head div.bb-avatar span {
+    margin-top: 22px;
+    display: inline-block;
+}
+	
+/* student profile first name */
+div.bb-header div.bb-avatar-head h1 {
+	font-weight: normal;
+    color: #333;
+	font-size: 28px;
+	font-family: "Noto Serif", times;
+	margin: 5px 0 5px 0;
+	display: block;
+}
+#dashboard-panel div.bb-widget.dashboard-student-profile div.bb-header.profile div.bb-avatar-head .bb-avatar{
+    margin-top:0px;
+}
+#dashboard-panel div.bb-widget.dashboard-student-profile div.bb-header.profile h1 {
+    display:block;
+    margin: 5px 0 5px 0;
+}
+	
+/* student profile last name */
+div.bb-header div.bb-avatar-head h2 {
+	font-weight: normal;
+	font-size: 24px;
+	font-family: "Noto Serif", times;
+	margin: 5px 0 15px 0;
+}
+	
+/* student profile detail container */
+div.dashboard-student-profile div.bb-detail {
+	margin: 130px 0 0 0;
+   	/*border-top: 1px solid #ececec;*/
+   	padding: 0;
+}
+	
+/* student profile large grid items */
+div.dashboard-student-profile div.student-grid-large > div {
+	text-align: center;
+	color: #656565;
+	margin: 0;
+    margin-bottom: 20px;
+	/*padding: 40px 30px 40px 20px;*/
+	border-right: 1px solid rgba(0, 0, 0, .05);
+    transition: all .1s ease-in-out;
+}
+
+div.dashboard-student-profile div.student-grid-large {
+	/*box-shadow: 0 -.3125rem 0 #e5e5e5;
+    border-bottom: .3125rem solid #e5e5e5;
+    background: #f8f8f8;*/
+
+    background: #f7f7f7;
+}
+	
+/* student profile large grid items inner container */
+div.dashboard-student-profile div.student-grid-large > div > div {
+	/*display: inline-block;
+    padding: 0;
+	cursor: pointer;
+	text-align: left;
+	position: relative;*/
+
+    display: inline-block;
+    overflow: hidden;
+    margin: 0;
+    padding: 10px 0px 20px 0px;
+    width: 100px;
+}
+
+    div.dashboard-student-profile div.student-grid-large > div > div > div {
+        text-align: center;
+    }
+
+	
+/* student profile large grid items icons */
+/*div.dashboard-student-profile div.student-grid-large > div span.bb-icon {
+	font-size: 40px; 
+	padding: 10px 0 0 0;
+	float: left;
+}*/
+	
+/* student profile large grid items text container */
+/*div.dashboard-student-profile div.student-grid-large > div > div > div {
+	float: left;
+	padding: 0 0 0 20px;
+}*/
+	
+/* student profile large grid items heading */
+div.dashboard-student-profile div.student-grid-large > div h1 {
+	/*font-size: 28px;
+	margin: 0;
+	font-family: "Noto Serif", times;
+	font-weight: lighter;
+    line-height: 1;*/
+
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Serif", times;
+    font-size: 30px;
+    font-weight: normal;
+    color: #656565;
+}
+	
+/* student profile large grid items sub text */
+div.dashboard-student-profile div.student-grid-large > div h2 {
+	/*font-size: 14px;
+	margin: 0;
+	font-family: "OpenSans-Regular";
+	letter-spacing: .5px;*/
+
+    padding-top: 5px;
+    font-size: 14px;
+	margin: 0;
+	font-family: "OpenSans-Light";
+    font-weight: normal;
+	letter-spacing: .5px;
+    color: #656565;
+}
+
+div.dashboard-student-profile div.student-grid-large > div:hover {
+    cursor: pointer;
+	background: #fff;
+}
+
+    div.dashboard-student-profile div.student-grid-large > div:hover h1,
+    div.dashboard-student-profile div.student-grid-large > div:hover h2 {
+        color: #333;
+    }
+
+div.dashboard-student-profile div.student-grid-large > div:active {
+    transform: translateY(2px);
+}
+	
+/* student profile small grid  */
+div.dashboard-student-profile div.student-grid-small {
+	display: inline-block;
+	/*border-top: 1px solid #ececec;
+	border-bottom: 1px solid #ececec;*/
+	margin: 0;
+    background: #fff;
+}
+	
+/* student profile small grid items */
+div.dashboard-student-profile div.student-grid-small > div {
+	/*text-align: center;
+   	margin: 0;
+   	color: #656565;
+   	border-right: 1px solid rgba(0,0,0,.05);
+	border-right: 1px solid rgba(0,0,0,.05);*/
+
+    text-align: center;
+	color: #747474;
+	margin: 20px 0px 0px 0px;
+	border-right: 1px solid rgba(0, 0, 0, .05);
+    transition: all .1s ease-in-out;
+}
+
+div.dashboard-student-profile div.student-grid-small > div:hover {
+  	background: #fff;
+  	color: #333;
+    cursor: pointer;
+}
+
+div.dashboard-student-profile div.student-grid-small > div:active {
+    transform: translateY(2px);
+}
+	
+/* student profile small grid items inner container */
+div.dashboard-student-profile div.student-grid-small > div > div {
+	display: inline-block;
+    padding: 20px 0px 10px 0px;
+    /*padding: 30px 20px 20px 20px;*/
+	position: relative;
+}
+	
+/* student profile small grid items icons */
+div.dashboard-student-profile div.student-grid-small > div span.bb-icon {
+	font-size: 40px; 
+	padding: 20px;
+}
+
+/* student profile small grid items text */
+div.dashboard-student-profile div.student-grid-small > div h2 {
+	/*font-size: 16px;
+	margin: 15px;
+	font-family: "OpenSans-Light";
+    line-height: 1;*/
+
+    font-size: 14px;
+	margin: 15px;
+	font-family: "OpenSans-Light";
+    font-weight: normal;
+	letter-spacing: .5px;
+    line-height: 1;
+}
+
+/* student profile blank slate */
+div.bb-widget.dashboard-student-profile div.bb-detail div.blank-profile { 
+	width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+}
+	
+/* student profile blank slate heading */
+div.bb-widget.dashboard-student-profile div.bb-detail div.blank-profile h1 { 
+	font-family: "Noto Serif", times;
+	font-size: 24px;
+	color: #333;	
+	font-weight: lighter;
+}
+	
+/* student profile blank slate sub heading */
+div.bb-widget.dashboard-student-profile div.bb-detail div.blank-profile h2 { 
+	font-family: "OpenSans-Regular";
+	font-size: 12px;
+	color: #333;
+	margin: 10px 10px 40px 10px;
+    font-weight: 400;
+}
+	
+/* student profile blank slate image */
+div.bb-widget.dashboard-student-profile div.bb-detail div.blank-profile img { 
+	margin: 40px 0 40px 0;
+}
+	
+/* student profile blank slate */
+div.bb-widget.dashboard-student-profile div.bb-detail { 
+	position: absolute;
+	width: 100%;
+	top: 100px;
+	bottom: 0;
+    background: #fff;
+}
+
+/* END STUDENT PROFILE */
+
+
+
+/* STUDENT DETAIL */
+
+/* detail heading */
+
+
+/* detail sub-heading */
+
+
+/* student detail */
+div.dashboard-student-detail div.bb-detail {
+	margin: 0 20px 20px 20px;
+}
+
+/* student detail list group */
+div.dashboard-student-detail div.bb-detail div.bb-column-container {
+  	margin: 0 0 0 0;
+}
+
+div.dashboard-student-detail div.bb-detail div.bb-column-container div.bb-row div.three.bb-columns{
+  	margin-left: 0;
+}
+
+/* student detail row heading */
+div.dashboard-student-detail div.bb-detail div.bb-column-container.row-heading {
+	margin: 0;
+	font-family: "OpenSans-SemiBold";
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+/* student detail list item row */
+div.dashboard-student-detail div.bb-detail div.bb-row {
+	margin: 0;
+	padding: 10px 0 10px 0;
+	/* border-bottom: 1px solid #d5d5d5; */
+}
+	
+/* student detail list item row border */
+div.dashboard-student-detail div.bb-detail div.bb-row:after {
+    content: "";
+    width: 95%;
+    height: 1px;
+    background: #d5d5d5;
+    display: inline-block;
+    margin: 10px 0 0 50px;
+    right: 0;
+}
+	
+/* student detail row heading row border */
+div.dashboard-student-detail div.bb-detail div.bb-column-container.row-heading div.bb-row:after {
+	margin: 5px 0 5px 0;
+	width: 100%;
+}
+	
+/* student detail row heading row */
+div.dashboard-student-detail div.bb-detail div.bb-column-container.row-heading div.bb-row {
+	padding: 5px 0 5px 0;
+}
+	
+/* student detail list item row border top */
+div.dashboard-student-detail div.bb-detail div.bb-row.bb-border-top {
+	/*border-top: 1px solid #d5d5d5;
+	border-bottom: 0;*/
+}
+
+/* student detail list item icon */
+div.dashboard-student-detail div.bb-detail div.bb-row span.bb-icon {
+	font-size: 32px;
+	color: #999;
+}
+
+/* student detail list item main text */
+div.dashboard-student-detail div.bb-detail div.bb-row h1 {
+	font-family: "OpenSans-Regular";
+	font-size: 16px;
+	margin: 0 0 5px 0;
+    line-height: 1;
+    padding: 0;
+}
+
+/* student detail list item sub text */
+div.dashboard-student-detail div.bb-detail div.bb-row h2 {
+	font-family: "OpenSans-Light";
+	font-size: 14px;
+	margin: 0;
+	color: #666;
+}
+
+/* student detail list item sub sub text */
+div.dashboard-student-detail div.bb-detail div.bb-row h3 {
+	font-family: "OpenSans-Regular";
+	font-size: 12px;
+	margin: 10px 0 0 0;
+}
+	
+/* student detail list item main text */
+div.dashboard-student-detail div.bb-detail div.bb-row p {
+	font-family: "OpenSans-Regular";
+	font-size: 12px;
+	margin: 10px 0 10px 0;
+    color: #656565;
+}
+
+/* student detail list item show more text */
+div.dashboard-student-detail div.bb-detail div.bb-row p.showmore {
+	font-family: "OpenSans-Italic";
+	font-size: 12px;
+	margin: 10px 0 0 0;
+	cursor: pointer;
+}
+
+/* END STUDENT DETAIL */
+
+
+/* STUDENT GRADES */
+	
+div.dashboard-student-detail.student-grades div.bb-detail div.bb-row {
+	padding: 10px 0 5px 0;
+}
+	
+div.dashboard-student-detail.student-grades div.bb-detail div.bb-row:after {
+	width: 100%;
+	margin: 10px 0 0 0;
+	background: #efefef;
+}
+	
+div.dashboard-student-detail.student-grades div.bb-detail div.bb-row h1 {
+	margin: 5px 0 5px 0;
+}
+	
+div.dashboard-student-detail.student-grades div.bb-detail div.bb-row h2 {
+	margin-left: 30px;
+    font-family: "OpenSans-Regular";
+    font-size: 14px;
+}
+
+div.dashboard-student-detail.student-grades div.bb-detail div.bb-row h3 {
+    margin-left: 30px;
+    font-family: "OpenSans-Light";
+    font-size: 12px;
+}
+	
+/* student grades indicator */
+div.dashboard-student-detail div.bb-row span.grade {
+	min-width: 30px;
+	background-color: #efefef;
+	border-radius: 50px;
+	display: inline-block;
+	text-align: center;
+	font-size: 13px;
+	font-family: "OpenSans-SemiBold";
+    padding: 5px;
+}
+
+div.dashboard-student-detail div.bb-detail div.bb-row span.grade {
+    float: right;
+}
+
+/* student grades overall indicator */
+div.dashboard-student-detail div.bb-row span.grade.overall {
+	/*border-radius: 2px;*/
+	margin: 5px 0 0 0;
+}
+
+/* student grades indicator text */
+div.dashboard-student-detail div.bb-row span.grade span {
+	margin: 3px 5px 3px 5px;
+	display: inline-block;
+    word-break:break-all;
+}
+
+div.dashboard-student-detail div.bb-footer div.bb-hover-card {
+	width: 300px;
+	height: auto;
+	left: -300px;
+    bottom: 20px;
+	background-color: #fff;
+	text-align: left;
+	font-family: "OpenSans-Regular";
+	-webkit-box-shadow: 0px 2px 5px 0px rgba(227,227,227,1);
+	-moz-box-shadow: 0px 2px 5px 0px rgba(227,227,227,1);
+	box-shadow: 0px 2px 5px 0px rgba(227,227,227,1);
+	max-height: 400px;
+	overflow: auto;
+	color: #333;
+}
+
+div.dashboard-student-detail div.bb-footer div.bb-row span.grade {
+	margin: 15px;
+}
+
+div.dashboard-student-detail div.bb-footer div.bb-hover-card div.bb-row div.grades-indicator span.grade {
+    margin-right: 0px;
+}
+
+div.dashboard-student-detail div.bb-footer div.bb-hover-card h1 {
+	margin: 15px 10px 15px 15px;
+    font-size: 16px;
+    font-family: "OpenSans-SemiBold";
+}
+
+div.dashboard-student-detail div.bb-footer div.bb-hover-card h2 {
+	margin: 15px 10px 0 0;
+	font-size: 14px;
+}
+
+div.dashboard-student-detail div.bb-footer div.bb-hover-card p {
+	margin: 0 10px 0 0;
+	font-size: 11px;
+    line-height: 16px;
+}
+
+div.dashboard-student-detail div.bb-footer div.bb-hover-card div.bb-column-container {
+	margin: 0 0 20px 0;
+}
+
+div.dashboard-student-detail div.bb-footer div.bb-hover-card div.grades-indicator {
+	text-align: center;
+}
+
+span.bb-icon-help:hover {
+    cursor: pointer;
+}
+/* END STUDENT GRADES */
+
+/* CAFETERIA BALANCE */
+
+div.dashboard-student-detail.student-cafeteria-balance div.bb-detail h1 {
+    margin-top: 35px;
+}
+
+div.dashboard-student-detail.student-cafeteria-balance div.bb-detail p {
+    margin-bottom: 20px;
+}
+
+/* END CAFETERIA BALANCE*/
+
+/* ATTENDANCE */
+
+/* regular selectors */
+div.bb-widget div.bb-detail ul.bb-large-filters {
+    margin-top: 20px;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+div.bb-widget div.bb-detail ul.bb-large-filters li {
+    float: left;
+    display: inline-block;
+    margin: 0px 25px 20px 0px;
+    width: 112px;
+    height: 112px;
+    background: #f7f7f7;
+    border: 1px solid #e7e7e7;
+    border-radius: 2px;
+    text-align: center;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+}
+
+div.bb-widget div.bb-detail ul.bb-large-filters li h1 {
+    margin: 0;
+    padding-top: 20px;
+    font-family: "Noto Serif", times;
+    font-size: 34px;
+    color: #666666;
+    transition: all .5s ease-in-out;
+}
+
+div.bb-widget div.bb-detail ul.bb-large-filters li p {
+    margin: 0;
+    padding: 8px 8px 0 8px;
+    font-family: "OpenSans-Regular", sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    color: #666666;
+    transition: all .5s ease-in-out;
+}
+
+/* active selectors */
+
+div.bb-widget div.bb-detail ul.bb-large-filters li.active {
+    background: #ffffff;
+    border: 1px solid #909090;
+    border-radius: 2px;
+}
+
+div.bb-widget div.bb-detail ul.bb-large-filters li.active h1 {
+    color: #4a4a4a;
+}
+
+div.bb-widget div.bb-detail ul.bb-large-filters li.active p {
+    color: #333;
+}
+
+div.bb-detail .row-heading {
+    border-bottom:1px solid #d5d5d5;
+}
+
+div.bb-detail .row-heading p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+div.bb-detail .grid-container.row-container {
+    border-bottom:1px solid #d5d5d5; 
+}
+
+div.bb-detail .row-container p {
+    font-size: 12px;
+}
+
+div.bb-detail .row-container .attendacetype p {
+    font-weight: bold;
+}
+
+div.dashboard-student-detail.student-attendance div.bb-detail div.bb-row::after {
+    margin-left: 0;
+    width: 100%;
+}
+
+/* END ATTENDANCE */
+
+
+/* BEGIN PASSKEYS */
+
+/* passkey grid  */
+
+div.dashboard-passkeys div.passkey-grid {
+	display: inline-block;
+	margin: 0;
+}
+
+div.dashboard-passkeys div.passkey-grid .bb-column, div.dashboard-passkeys div.passkey-grid .bb-columns {
+    margin-left: 0px;
+}
+
+/* passkey grid items */
+div.dashboard-passkeys div.passkey-grid > div {
+    margin: 20px auto 0px auto;
+}
+
+div.dashboard-passkeys div.passkey-grid > div > div.passkey-wrapper div.label-wrapper {
+    width: 150px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    word-wrap: break-word;
+}
+
+div.dashboard-passkeys div.passkey-grid > div > div.passkey-wrapper div.label-wrapper p {
+    text-align: center;
+    font-family: "OpenSans-Regular", sans-serif;
+    font-size: 13px;
+    color: #9b9b9b;
+    line-height: 1.25;
+}
+
+div.dashboard-passkeys div.passkey-grid > div > div.passkey-wrapper div.image-wrapper {
+    width: 108px;
+    height: 105px;
+    border-radius: 2px;
+    padding: 3px 0 0 0;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #fff;
+    text-align: center;
+    transition: all .5s ease-in-out;
+}
+
+div.dashboard-passkeys div.passkey-grid > div > div.passkey-wrapper div.image-wrapper img {
+    width: 100px;
+    height: 100px;
+    border-radius: 2px;
+    border: 1px solid #E7E7E7;
+    transition: all .5s ease-in-out;
+}
+
+div.dashboard-passkeys div.passkey-grid > div > div.passkey-wrapper div.image-wrapper img:hover {
+    border-color: #333;
+    cursor: pointer;
+}
+
+/* login */
+
+div.dashboard-student-detail.dashboard-passkey-login div.bb-detail div p,
+div.dashboard-student-detail.dashboard-passkey-add div.bb-detail div p {
+    color: #999;
+	font-size: 14px;
+	font-family: "OpenSans-Regular";
+	margin: 20px 20px 20px 20px;
+	line-height: 1.25;
+}
+
+div.dashboard-student-detail.dashboard-passkey-login div.bb-detail div.bb-row::after {
+    background: none;
+    margin: 0px;
+    width: 100%;
+}
+
+div.dashboard-student-detail.dashboard-passkey-login div.bb-detail .bb-column, div.dashboard-student-detail.dashboard-passkey-login div.bb-detail .bb-columns {
+    margin-left: 0;
+}
+
+div.dashboard-student-detail.dashboard-passkey-login div.bb-detail div.passkey-wrapper {
+    margin-top: 17px;
+    width: 200px;
+    text-align: center;
+}
+
+div.dashboard-student-detail.dashboard-passkey-login div.bb-detail div.passkey-wrapper img {
+    width: 100px;
+    height: 100px;
+    border-radius: 2px;
+}
+
+div.dashboard-student-detail.dashboard-passkey-login div.bb-detail div.passkey-wrapper p {
+    text-align: center;
+    font-family: "OpenSans-Regular", sans-serif;
+    font-size: 18px;
+    color: #666666;
+    margin: 10px 0 10px 0;
+    line-height: 1.25;
+}
+
+div.dashboard-student-detail.dashboard-passkey-login div.bb-detail label, 
+.bb-widget.dashboard-student-detail.dashboard-passkeys.dashboard-passkey-add > .bb-detail > #passkey-suggest-pnl-main > #passkey-suggest-pnl-detail label {
+    font-family: "OpenSans-SemiBold", sans-serif;
+    font-size: 12px;
+    color: #666666;
+    font-weight: normal;
+    margin: 0;
+    margin-left: 20px;
+    margin-bottom: 7px;
+}
+
+div.dashboard-student-detail.dashboard-passkey-login div.bb-detail .ui-txt-general,
+.bb-widget.dashboard-student-detail.dashboard-passkeys.dashboard-passkey-add > .bb-detail > #passkey-suggest-pnl-main > #passkey-suggest-pnl-detail input {
+    width: 95%; /*400px;*/
+    height: 45px;
+    background: none;
+    background-color: #fff;
+    margin: 0;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #cdcdcd;
+    border-radius: 2px;
+    font-family: "OpenSans-Regular", sans-serif;
+    font-size: 16px;
+    color: #9b9b9b;
+    font-weight: normal;
+    outline: 0;
+    transition: all .15s ease-in-out;
+}
+
+div.dashboard-student-detail.dashboard-passkey-login div.bb-detail .ui-txt-general.required,
+.bb-widget.dashboard-student-detail.dashboard-passkeys.dashboard-passkey-add > .bb-detail > #passkey-suggest-pnl-main > #passkey-suggest-pnl-detail input {
+    border: 1px solid #cdcdcd;
+    border-radius: 2px;
+}
+
+div.dashboard-student-detail.dashboard-passkey-login div.bb-detail .ui-txt-general:focus,
+.bb-widget.dashboard-student-detail.dashboard-passkeys.dashboard-passkey-add > .bb-detail > #passkey-suggest-pnl-main > #passkey-suggest-pnl-detail input:focus {
+    border-color: #c66bd7;
+    background-color: #fafafa;
+}
+
+div.dashboard-student-detail.dashboard-passkey-login div.bb-detail .bb-button.action, #dashboard-passkey-add-buttons .bb-button.action,
+.bb-widget.dashboard-student-detail.dashboard-passkeys.dashboard-passkey-add > .bb-detail > #passkey-suggest-pnl-main > #passkey-suggest-pnl-detail button {
+    display: block;
+    float: right;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 140px;
+    text-align: center;
+    height: 25px;
+}
+
+.bb-widget.dashboard-student-detail.dashboard-passkeys.dashboard-passkey-add > .bb-detail > #passkey-suggest-pnl-main > #passkey-suggest-pnl-detail button {
+    float:none;
+}
+
+div.dashboard-student-detail.dashboard-passkey-login div.bb-detail .bb-button.action.primary, #dashboard-passkey-add-buttons .bb-button.action.primary {
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
+    width: 140px;
+    text-align: center;
+    height: 25px;
+}
+
+div.dashboard-student-detail.dashboard-passkey-login div.bb-detail .bb-button.action span, #dashboard-passkey-add-buttons .bb-button.action span {
+    display: block;
+    height: 100%;
+    padding-top: 4px;
+}
+
+/* suggest */
+
+div.dashboard-student-detail.dashboard-passkeys.dashboard-passkey-add div.bb-detail {
+    margin: 0px;
+}
+
+div.dashboard-student-detail.dashboard-passkeys.dashboard-passkey-add div.bb-detail div.bb-row::after {
+    background: none;
+    margin: 0;
+    width: 100%;
+}
+
+div.dashboard-student-detail.dashboard-passkeys.dashboard-passkey-add div.bb-detail div.bb-row p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+div.dashboard-passkeys div.passkey-grid > div.select.active > div.passkey-wrapper div.image-wrapper {
+    border-color: #39E379;
+    position: relative;
+}
+
+div.dashboard-passkeys div.passkey-grid > div.select.active > div.passkey-wrapper div.image-wrapper img {
+    border-color: #E7E7E7;
+}
+
+div.dashboard-passkeys div.passkey-grid > div.select.active > div.passkey-wrapper div.image-wrapper img:hover {
+    border-color: #E7E7E7;
+}
+
+div.dashboard-passkeys div.passkey-grid > div.select.active > div.passkey-wrapper div.image-wrapper img.selection {
+    border: 0px solid;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 0 2px 0 0;
+}
+
+div.dashboard-passkeys div.passkey-grid > div.select.hover > div.passkey-wrapper div.image-wrapper {
+   position: relative;
+}
+
+/*div.dashboard-passkeys div.passkey-grid > div.select.inactive > div.passkey-wrapper div.image-wrapper-overlay {
+    width: 100px;
+    height: 100px;
+    background-color: #0A0B09;
+    position: absolute;
+    border-radius: 2px;
+    border: 0;
+    opacity: .85;
+    transition: all .5s ease-in-out;
+}*/
+
+div.dashboard-passkeys div.passkey-grid > div.select.inactive > div.passkey-wrapper div.image-wrapper-overlay:hover {
+    background-color: transparent;
+    opacity: 0;
+}
+
+div.dashboard-passkeys div.passkey-grid > div.select.inactive > div.passkey-wrapper div.image-wrapper div.image-wrapper-overlay p {
+    text-align: center;
+    padding-top: 20px;
+    color: #efefef;
+    float: none;
+    width: auto;
+    margin: 0;
+    line-height: 1;
+}
+
+div.dashboard-passkeys div.passkey-grid > div.select.inactive > div.passkey-wrapper div.image-wrapper img {
+
+}
+
+div.dashboard-passkeys div.passkey-grid > div.select.hover > div.passkey-wrapper div.image-wrapper img {
+    opacity: 1;
+}
+
+div.dashboard-passkeys div.passkey-grid > div.select.hover > div.passkey-wrapper div.image-wrapper p,
+div.dashboard-passkeys div.passkey-grid > div.select.active > div.passkey-wrapper div.image-wrapper p {
+    display: none;
+}
+
+/*div.dashboard-passkeys div.passkey-grid > div.select.inactive > div.passkey-wrapper div.image-wrapper p {
+    float: left;
+    width: 100px;
+    margin: -60px auto 0px auto;
+    text-align: center;
+    color: #fff;
+}*/
+
+div.dashboard-passkeys div.passkey-grid > div.select.inactive > div.passkey-wrapper div.label-wrapper p {
+    
+}
+
+#dashboard-passkey-add-buttons {
+    border-top: 1px solid #efefef;
+}
+
+#dashboard-passkey-add-buttons-wrapper {
+    height: 80px;
+}
+
+.bb-widget.dashboard-student-detail.dashboard-passkeys.dashboard-passkey-add > .bb-detail > #passkey-suggest-pnl-main {
+    border-top: 1px solid #efefef;
+}
+
+.bb-widget.dashboard-student-detail.dashboard-passkeys.dashboard-passkey-add > .bb-detail > #passkey-suggest-pnl-main > #passkey-suggest-pnl-detail {
+    padding:20px;
+    margin-top:20px;
+}
+.bb-widget.dashboard-student-detail.dashboard-passkeys.dashboard-passkey-add > .bb-detail > #passkey-suggest-pnl-main > #passkey-suggest-pnl-detail > #passkey-suggest-pnl-inputs {
+   
+}
+.bb-widget.dashboard-student-detail.dashboard-passkeys.dashboard-passkey-add > .bb-detail > #passkey-suggest-pnl-main > #passkey-suggest-pnl-detail button {
+   margin-top:40px;
+
+}
+@media (max-width: 767px) {
+    .bb-widget.dashboard-student-detail.dashboard-passkeys.dashboard-passkey-add > .bb-detail > #passkey-suggest-pnl-main > #passkey-suggest-pnl-detail button {
+    margin-top:10px;
+    }
+}
+/* END PASSKEYS */
+
+
+/* HELPERS */
+.bb-color-critical {
+	color: #CC413A !important;
+}
+
+.bb-ultra-orange { 
+    color: #cc413a !important;
+}
+
+.bb-color-warning {
+	color: #ffe12b !important;
+}
+
+.bb-align-center {
+    align: center;
+    text-align: center;
+}
+
+.bb-header-label {
+    font-family: "Noto Serif", times;
+    font-weight: normal;
+    font-size: 34px;
+}
+
+.bb-paragraph {
+    font-family: "OpenSans-Regular", sans-serif;
+    font-size: 12px;
+    color: #656565;
+    line-height: 20px;
+}
+
+/* fix for photo gallery submit comment button */
+a.ui-btn-list.pgstreamdetail span {
+    padding-top: 5px;
+}
+
+/* DROPDOWN */
+
+div.bb-widget div.bb-header div.bb-dropdown,
+div.bb-widget div.bb-detail div.bb-dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: default;
+    font-family: "OpenSans-light", sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+div.bb-widget div.bb-header div.bb-dropdown > span,
+div.bb-widget div.bb-detail div.bb-dropdown > span {
+    height: 30px;
+    display: inline-block;
+    font-family: "OpenSans-light", sans-serif;
+    border-left: #dadada 1px solid;
+    padding-left:20px;
+    font-size: 18px;
+    color: #333;
+}
+
+div.bb-widget div.bb-header div.bb-dropdown > span:after,
+div.bb-widget div.bb-detail div.bb-dropdown > span:after {
+    content: "\25BE";
+    margin-left: 8px;
+    color: #181818;
+}
+
+div.bb-widget div.bb-header div.bb-dropdown div.bb-dropdown-items,
+div.bb-widget div.bb-detail div.bb-dropdown div.bb-dropdown-items {
+    display: none;
+    position: absolute;
+    width: auto;
+    background-color: #fefefe;
+    min-width: 230px;
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.2);
+    border: 6px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    margin: 0px;
+    z-index: 10000;
+    font-size: 14px;
+}
+
+div.bb-widget div.bb-header div.bb-dropdown div.bb-dropdown-items > p,
+div.bb-widget div.bb-detail div.bb-dropdown div.bb-dropdown-items > p {
+    padding: 15px 20px 15px 40px;
+    margin: 0;
+    width: auto;
+    transition: background-color .3s ease-in-out;
+    background-color: #fefefe;
+    cursor: pointer;
+}
+
+div.bb-widget div.bb-header div.bb-dropdown div.bb-dropdown-items > p.selected,
+div.bb-widget div.bb-detail div.bb-dropdown div.bb-dropdown-items > p.selected {
+    padding: 15px 20px 15px 15px;
+    cursor: default;
+}
+
+div.bb-widget div.bb-header div.bb-dropdown div.bb-dropdown-items > p.selected:before,
+div.bb-widget div.bb-detail div.bb-dropdown div.bb-dropdown-items > p.selected:before {
+  	/* content: '\2713'; */
+  	margin: 0 10px 0 0;
+  	content: "";
+  	width: 14px;
+	height: 11px;
+	display: inline-block;
+  	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAALCAYAAABPhbxiAAAAAXNSR0IArs4c6QAAAQZJREFUKBVjYCARPJv5jAukhZEUfTcnPDL9w/B/lSAnqzYTsRpvTH6h+IeRYQMTE0OeVLrUN6I0Xp3zWOjPv5/bGP8ztGrmyW8GWQbWCHM3NttvT/rPzvD1/wag3CatArlpMDVMIE3vv/++en3SY3uYIIz+//8/469/jxcy/Gd4pp0nVwETB9FMYPcyMSX8+/9/NbrmaxMfdQKDT4qNSTaekRHoUCQAdqpmnuxBJkbGUGTN1yY8yvrPyODLwM0YoJrH+BNJD5iJEh3XJz92+Pfv/yoGhv9AvzCmMjOx2WjkStxH1wTio2gECdyY+MTxL8O/lQyMjD7aebKnQGJEg6tTX/EQUgwA35JgtwkUUAEAAAAASUVORK5CYII=');
+}
+
+div.bb-widget div.bb-header div.bb-dropdown div.bb-dropdown-items p:hover,
+div.bb-widget div.bb-detail div.bb-dropdown div.bb-dropdown-items p:hover,
+div.bb-widget div.bb-header div.bb-dropdown div.bb-dropdown-items p:focus,
+div.bb-widget div.bb-detail div.bb-dropdown div.bb-dropdown-items p:focus{ 
+    background-color: #efefef;
+}
+
+div.bb-widget div.bb-header div.bb-dropdown div.bb-dropdown-items p.keySelected,
+div.bb-widget div.bb-detail div.bb-dropdown div.bb-dropdown-items p.keySelected {
+    background-color: #efefef;
+}
+
+div.bb-widget div.bb-header div.bb-dropdown div.bb-dropdown-items p:active,
+div.bb-widget div.bb-detail div.bb-dropdown div.bb-dropdown-items p:active {
+    background-color: #181818;
+    color: #fff;
+}
+
+div.bb-widget div.bb-header div.bb-dropdown:hover div.bb-dropdown-items,
+div.bb-widget div.bb-detail div.bb-dropdown:hover div.bb-dropdown-items,
+div.bb-widget div.bb-header div.bb-dropdown:focus div.bb-dropdown-items,
+div.bb-widget div.bb-detail div.bb-dropdown:focus div.bb-dropdown-items {
+    display: block;
+}
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 550px) {
+	/* Styles */
+
+	
+	/* student detail list item row border */
+	div.dashboard-student-detail div.bb-detail div.bb-row:after {
+    	width: 100%;
+    	margin: 10px 0 0 0;
+	}
+    div.bb-widget div.bb-header div.bb-dropdown > span, div.bb-widget div.bb-detail div.bb-dropdown > span {
+        border-left:none;
+        padding-right: 25px
+    }
+}
+
+/* END RESPONSIVE */
+
+
+
+
+/*
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/29/2014
+*/
+
+/* Grid */
+.bb-column-container {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.bb-column, .bb-columns {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.bb-row {
+    width: 100%;
+    overflow: hidden;
+}
+
+div.bb-row.border-top {
+    padding: 10px 0 0 0;
+    border-top: 1px solid #efefef;
+}
+
+div.bb-row.border-bottom {
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #efefef;
+}
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+    .bb-column-container {
+        /*width: 85%;*/
+        padding: 0;
+    }
+}
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+    .bb-column-container {
+        /*width: 80%;*/
+    }
+
+    .bb-column, .bb-columns {
+        margin-left: 4%;
+    }
+
+    .bb-column:first-child, .bb-columns:first-child {
+        margin-left: 0;
+    }
+
+    .one.bb-column,
+    .one.bb-columns                    { width: 4.66666666667%; }
+    .two.bb-columns                    { width: 13.3333333333%; }
+    .three.bb-columns                  { width: 25%;            }
+    .four.bb-columns                   { width: 30.6666666667%; }
+    .five.bb-columns                   { width: 39.3333333333%; }
+    .six.bb-columns                    { width: 50%;            }
+    .seven.bb-columns                  { width: 56.6666666667%; }
+    .eight.bb-columns                  { width: 65.3333333333%; }
+    .nine.bb-columns                   { width: 74.0%;          }
+    .ten.bb-columns                    { width: 82.6666666667%; }
+    .eleven.bb-columns                 { width: 91.3333333333%; }
+    .twelve.bb-columns                 { width: 100%; margin-left: 0; }
+
+    .one-third.bb-column               { width: 30.6666666667%; }
+    .two-thirds.bb-column              { width: 65.3333333333%; }
+
+    .one-half.bb-column                { width: 48%; }
+
+    /* Offsets */
+    .offset-by-one.bb-column,
+    .offset-by-one.bb-columns          { margin-left: 8.66666666667%; }
+    .offset-by-two.bb-column,
+    .offset-by-two.bb-columns          { margin-left: 17.3333333333%; }
+    .offset-by-three.bb-column,
+    .offset-by-three.bb-columns        { margin-left: 26%;            }
+    .offset-by-four.bb-column,
+    .offset-by-four.bb-columns         { margin-left: 34.6666666667%; }
+    .offset-by-five.bb-column,
+    .offset-by-five.bb-columns         { margin-left: 43.3333333333%; }
+    .offset-by-six.bb-column,
+    .offset-by-six.bb-columns          { margin-left: 52%;            }
+    .offset-by-seven.bb-column,
+    .offset-by-seven.bb-columns        { margin-left: 60.6666666667%; }
+    .offset-by-eight.bb-column,
+    .offset-by-eight.bb-columns        { margin-left: 69.3333333333%; }
+    .offset-by-nine.bb-column,
+    .offset-by-nine.bb-columns         { margin-left: 78.0%;          }
+    .offset-by-ten.bb-column,
+    .offset-by-ten.bb-columns          { margin-left: 86.6666666667%; }
+    .offset-by-eleven.bb-column,
+    .offset-by-eleven.bb-columns       { margin-left: 95.3333333333%; }
+
+    .offset-by-one-third.bb-column,
+    .offset-by-one-third.bb-columns    { margin-left: 34.6666666667%; }
+    .offset-by-two-thirds.bb-column,
+    .offset-by-two-thirds.bb-columns   { margin-left: 69.3333333333%; }
+
+    .offset-by-one-half.bb-column,
+    .offset-by-one-half.bb-columns     { margin-left: 52%; }
+
+    /* overrides */
+
+    /*.student-attendance .bb-column, .student-attendance .bb-columns {
+        margin-left: 0;
+    }*/
+}
+/* END Skeleton Grid */
+
+/* overrides */
+span#bb-dropdownschool-text { display : none; }
+
+.galleria-counter {
+    opacity: 1 !important;
+}

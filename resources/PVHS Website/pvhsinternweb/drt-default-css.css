@@ -1,0 +1,211 @@
+/* GroupBegin Global */
+.show960 {
+	display: block;
+}
+.hide960, .show768, .show640, .show480, .show320 {
+	display: none;
+}
+div.sw-special-mode-bar {
+	position:fixed !important;
+	bottom:0px;
+	left:0px;
+	width:100%;
+}
+.hidden {
+	display: none;
+}
+.cs-accessible-hidden {
+    width: 0 !important;
+    height: 0 !important;
+    display: block !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: 0 !important;
+    overflow: hidden !important;
+}
+/* GroupEnd */
+
+/* GroupBegin App Styles */
+#calendar-pnl-smcalendar {
+	display: block;
+}
+#cal-event-detail-col1, #cal-event-detail-col2 {
+	width: 100% !important;
+	padding: 10px 0px 0px;
+}
+.cal-ed-header-title {
+	width: auto;
+}
+.ui-column-one.region {
+	width: auto;
+	clear: both;
+}
+.ui-column-one-quarter.region {
+	width: 25%;
+	float: left;
+}
+.ui-column-one-half.region {
+	width: 50%;
+	float: left;
+}
+.ui-column-one-third.region {
+	width: 33%;
+	float: left;
+}
+.ui-column-two-thirds.region {
+	width: 66%;
+	float: left;
+}
+.region.right {
+	float: right;
+}
+.region.clearleft {
+	clear: left;
+}
+.sp.column.two .ui-datepicker .ui-datepicker-header, #spn-content .ui-datepicker .ui-datepicker-header {
+	background: none;
+}
+.sp.column.two #calendar-pnl-smcalendar {
+	display: none;
+}
+.flexpage p, #about-teacher-bio p {
+	padding: 10px 0px;
+}
+/* GroupEnd */
+
+
+/* 768 */
+@media (max-width: 1023px) {
+    /* GroupBegin Global */
+    .show768 {
+        display: block;
+    }
+    .hide768 {
+        display: none;
+    }
+    /* GroupEnd */
+    
+    /* GroupBegin App Styles */
+    #calendar-pnl-calendarcontainer {
+        min-width: 0px;
+    }
+    #calendar-pnl-smcalendar {
+        display: none;
+    }
+    .ui-column-one-quarter.region {
+        width: 50%;
+        float: left;
+        clear: left;
+    }
+    .ui-column-one-third.region {
+        width: 50%;
+        float: left;
+    }
+    .ui-column-two-thirds.region {
+        width: 50%;
+        float: left;
+    }
+    .region.right {
+        float: left;
+    }
+    .region.clearleft {
+        clear: none;
+    }  
+    .ui-widget.app.about-teacher #about-teacher-information{ 
+        width: 100%; 
+    } 
+    .ui-widget.app.about-teacher #about-teacher-bio{ 
+        margin-left: 0px;  /*normally there is a margin-left of 200 something*/
+        width: 100%; 
+    }                
+    /* GroupEnd */
+}
+
+
+/* 640 */
+@media (max-width: 767px) {
+    /* GroupBegin Global */
+    .show640 {
+        display: block;
+    }
+    .hide640 {
+        display: none;
+    }
+    /* GroupEnd */
+    
+    /* GroupBegin App Styles */
+    .ui-column-one.region {
+        width: auto;
+        clear: none;
+    }
+    .ui-column-one-quarter.region {
+        width: auto;
+        float: none;
+    }
+    .ui-column-one-half.region {
+        width: auto;
+        float: none;
+    }
+    .ui-column-one-third.region {
+        width: auto;
+        float: none;
+    }
+    .ui-column-two-thirds.region {
+        width: auto;
+        float: none;
+    }
+    .region.right {
+        float: none;
+    }
+    input.ui-txt-general.medium, textarea.ui-txt-general.medium, input.ui-txt-heading.medium {
+        width: 80%;
+    }
+    /* GroupEnd */
+    
+    /* GroupBegin Subpage No Nav */
+    .ui-spn .ui-column-one-third {
+            width: auto !important;
+            float: none !important;
+    }
+    /* GroupEnd */
+}
+
+
+/* 480 */
+@media (max-width: 639px) {
+    /* GroupBegin Global */
+    .show480 {
+        display: block;
+    }
+    .hide480 {
+        display: none;
+    }
+    /* GroupEnd */
+    
+    /* GroupBegin App Styles */
+    #calendar-pnl-filter-toggle, 
+    #calendar-pnl-buttons-top,  
+    span.ui-toggle {
+        display: none;	
+    }
+    #calendar-pnl-title {
+        width: auto;	
+    }
+    #cal-event-detail-header h1 {
+        margin: 0px;
+    }
+    /* GroupEnd */
+}
+
+
+/* 320 */
+@media (max-width: 479px) {
+    /* GroupBegin Global */
+    .show320 {
+        display: block;
+    }
+    .hide320 {
+        display: none;
+    }
+    /* GroupEnd */
+}
