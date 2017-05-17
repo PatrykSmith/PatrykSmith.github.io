@@ -80,6 +80,16 @@ nav ul li {
   min-height: 100%;
   background-image: url(/resources/logo.jpg);
 }
+.internship_logo{
+  position: relative;
+  opacity: 0.35;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+  background-image: url(/resources/logo.jpg);
+}
 .pageDivide {
   color:#ddd;
   background-color:#282E34;
